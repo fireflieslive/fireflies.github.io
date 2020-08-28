@@ -215,6 +215,11 @@
             float: right;
         }
 
+        .footer--terms, .footer--privacy {
+            text-decoration: underline;
+            color: #b8b8b8;
+        }
+
     /* Utilities */
     .h1-sm {
         font-size: 2rem;
@@ -244,7 +249,7 @@
     }
 
     #mc_embed_signup .mc-field-group input {
-        margin-left: 45px;
+        margin-left: 52px;
         width: 60% !important;
     }
 
