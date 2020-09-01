@@ -1,0 +1,35 @@
+footer {
+    font-size: 0.625rem;
+
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    @media screen and (max-width:767px) {
+        margin-top: 30px;
+        background-color: black;
+        padding-bottom: 25px;
+
+        p:first-child {
+            order: 2;
+        }
+
+        .footer--VB {
+            display: none;
+        }
+
+         .footer--copyright, .footer--terms {
+            float: left;
+        }
+
+        .footer--rights, .footer--privacy {
+            float: right;
+        }
+
+        .footer--terms, .footer--privacy {
+            text-decoration: underline;
+            color: #b8b8b8;
+        }
+    }
+}
