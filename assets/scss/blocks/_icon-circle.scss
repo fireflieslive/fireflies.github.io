@@ -1,0 +1,23 @@
+.icon-circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-circle {
+    display: inline-flex;
+    font-size: 0.5rem;
+    width: 2em;
+    height: 2em;
+    padding: 1.5em;
+    border-radius: 50%;
+    border: 1px solid $green;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-color: $green;
+        color: $darkGrey;
+    }
+}

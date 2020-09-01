@@ -1,0 +1,17 @@
+.form-group {
+    display: flex;
+
+    input {
+        &:first-child {
+            flex-grow: 1;
+        }
+
+        border: 0;
+        border-bottom: 2px solid $green;
+        display: inline-block;
+        background: transparent;
+        color: white;
+        padding: 1em;
+        margin: 0;
+    }
+}

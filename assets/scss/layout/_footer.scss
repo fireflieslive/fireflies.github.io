@@ -1,35 +1,39 @@
-footer {
+.footer {
     font-size: 0.625rem;
+    color: $lightGrey;
+    background-color: black;
+    margin-top: $ctaHeight;
 
     a {
-        text-decoration: none;
-        color: gray;
+        text-decoration: underline;
+        color: $lightGrey;
     }
 
-    @media screen and (max-width:767px) {
-        margin-top: 30px;
-        background-color: black;
-        padding-bottom: 25px;
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-        p:first-child {
-            order: 2;
-        }
+        li {
+            margin-bottom: 0.5em;
+            @include break( md ) {
+                display: inline-block;
+                &::after {
+                    display: inline-block;
+                    content: " | ";
+                    padding: 0 0.5em;
+                }
 
-        .footer--VB {
-            display: none;
+                &:last-child::after {
+                    content: none;
+                }
+            }        
         }
+    }
 
-         .footer--copyright, .footer--terms {
-            float: left;
-        }
-
-        .footer--rights, .footer--privacy {
-            float: right;
-        }
-
-        .footer--terms, .footer--privacy {
-            text-decoration: underline;
-            color: #b8b8b8;
-        }
+    @include break( md ) {
+        margin-top: 0;
+        padding: 25px 0;
+        background-color: transparent;
     }
 }

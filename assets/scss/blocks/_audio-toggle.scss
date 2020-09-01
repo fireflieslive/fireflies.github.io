@@ -1,0 +1,15 @@
+.audio-toggle {
+    display: inline-block;
+    height: 30px;
+    width: 45px;
+    background: transparent url("../img/Fireflies_On.svg") no-repeat center center;
+    border: none;
+    text-indent: -9999em;
+
+    @media screen and (max-width:767px) {
+        width: 50px;
+        height: 75px;
+        top: 115px;
+        right: 12%;
+    }
+}
