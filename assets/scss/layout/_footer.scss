@@ -1,8 +1,14 @@
+@include break( md, false ) {
+    .card .footer {
+        margin: 0 rem(-20px) rem(-20px) rem(-20px);
+        padding: 1em 0;
+    }    
+}
+
 .footer {
     font-size: 0.625rem;
     color: $lightGrey;
     background-color: black;
-    margin-top: $ctaHeight;
 
     a {
         text-decoration: underline;
@@ -32,8 +38,7 @@
     }
 
     @include break( md ) {
-        margin-top: 0;
-        padding: 25px 0;
+        margin-top: 1rem;
         background-color: transparent;
     }
 }

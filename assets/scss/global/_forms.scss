@@ -2,10 +2,6 @@
     display: flex;
 
     input {
-        &:first-child {
-            flex-grow: 1;
-        }
-
         border: 0;
         border-bottom: 2px solid $green;
         display: inline-block;
@@ -13,5 +9,38 @@
         color: white;
         padding: 1em;
         margin: 0;
+        font-weight: 700;
+
+        &:first-child {
+            padding-left: 0;
+            flex-grow: 1;
+        }
+
+        &::placeholder {
+            color: white;
+        }        
+
+        &:focus {
+            outline: none;
+            border-color: white;
+        }
+
+        &[type="submit"] {
+            transition: all ease-in-out 200ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $green;
+                color: black;
+            }
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus {
+          background: transparent;
+          -webkit-text-fill-color: $lightGrey;
+          -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+        }        
     }
 }

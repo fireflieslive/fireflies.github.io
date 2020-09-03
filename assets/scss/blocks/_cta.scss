@@ -1,30 +1,61 @@
-.mobile-cta {
-    @media screen and (max-width:767px) {
-        background-color: #00FFAE;
+$mobile-cta-height: 50px;
+@include break(md, false) {
+    .card {
+        text-align: center;
+    }
+    .socials {
+        margin-bottom: $mobile-cta-height + 20px;
+
+        .card__title {
+            display: none;
+        }
+    }
+    .mobile-cta {
+        background-color: $green;
         color: black;
         position: absolute;
-        bottom: -60px;
-        left: 0;
-        width: 100%;
-        height: 90px;
-        overflow: hidden;
-        margin-top: 50px;
+        bottom: 0px;
+        left: -5px;
+        width: calc(100% + 10px);
+        height: $mobile-cta-height;
+        text-align: center;
         transition: height 150ms ease-in-out;
+        padding: 1em 2em;
+
+        .card__text {
+            overflow: hidden;
+            height: 0;
+        }
 
         &.mobile-cta--expanded {
-            height: 143%;
+            height: calc(100% + 20px);
+            padding: 2em;
 
-            & .dropdown-icon {
+            .card__text {
+                height: auto;
+            }
+    
+            .dropdown-icon {
                 transform: rotate(180deg);
-                top: 30px;
-                position: relative;
-                left: 15px;
             }
         }
 
-        & .card__title {
-            height: $ctaHeight;
-            margin-top: 20px;
+        .card__title {
+            color: black;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .form-group {
+            input {
+                border-color: black;
+                color: black;
+                
+                &::placeholder {
+                    color: black;
+                }
+            }
         }
     }
 }
@@ -32,32 +63,8 @@
 .dropdown-icon {
     display: inline-block;
     width: 1em;
-    height: 1em;
+    height: auto;
     transition: transform 200ms ease-in-out;
-
-    @media screen and (max-width:767px) {
-        color: black;
-    }
-}
-
-.dropdown__icon {
-    @media screen and (max-width:767px) {
-        color: black;
-        font-size: 2em !important;
-    }
-}
-
-.dropdown__text {
-    @media screen and (max-width:767px) {
-        text-align: center;
-        margin-top: 50px !important;
-        line-height: 50px !important;
-        color: black;
-    }
-}
-
-.dropdown-content {
-    @media screen and (max-width:767px) {
-        display: none;
-    }
+    color: black;
+    margin-left: 0.5em;
 }

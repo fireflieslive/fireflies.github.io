@@ -14,7 +14,7 @@
     <!-- font awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/svg" href="assets/img/Fireflies_logo.svg">
     <!-- Begin Mailchimp Signup Form -->
@@ -51,7 +51,7 @@
         </div>
     </header>
 
-    <div class="stuck-top t-85">
+    <div class="stuck stuck--top">
         <div class="container text-right py-2">
             <button class="audio-toggle">Toggle Audio</button>
         </div>
@@ -62,25 +62,25 @@
         <source src="panio.mp4" type="video/mp4"> -->
     </video>
 
-    <div class="stuck-bottom">
+    <div class="stuck stuck--bottom">
         <div class="container">
             <!-- Bottom section -->
             <div class="card">
                 <section class="row relative">
-                    <div class="col-full col-md-third pb-1">
-                        <h2 class="card__title h1-sm">
+                    <div class="col-full col-md-half col-lg-third pb-1">
+                        <h2 class="card__title text-h2 text-md-h1">
                             Coming Soon
                         </h2>
-                        <p class="card__text">
+                        <p>
                             Enhance your experience by adding a visual aspect to your music. See the fireflies come to
                             life with
                             every note you play!
                         </p>
                     </div>
 
-                    <div class="col-full col-md-third pl-sm-2">
+                    <div class="col-full col-md-half col-lg-third">
                         <div class="mobile-cta" id="mobileCta">
-                            <h2 class="card__title dropdown__icon" onclick="toggle_dropdownz()"
+                            <h2 class="card__title text-h3 dropdown__icon" onclick="toggle_dropdownz()"
                                 data-toggle-class="#mobileCta:mobile-cta--expanded">
                                 Stay Up to Date
                                 <span class="desktop-hidden dropdown-icon">
@@ -93,87 +93,85 @@
                                                 points="45.254,36.416 27.224,18.385 9.193,36.416 0,27.224 27.224,0 54.447,27.224 	" />
                                         </g>
                                     </svg>
-
                                 </span>
                             </h2>
 
-                            <!-- Mail chimp form -->
-                            <div id="mc_embed_signup" class="signup-form">
-                                <form
-                                    action="https://live.us17.list-manage.com/subscribe/post?u=69686b41f1936a6456e8c4b69&amp;id=8934dd72c1"
-                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                    target="_blank">
-                                        <div class="form-group">    
-                                            <input 
-                                                type="email" 
-                                                value="" 
-                                                name="EMAIL" 
-                                                class="email"
-                                                id="mce-EMAIL" 
-                                                required
-                                                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                                                placeholder="E-mail"
-                                            />
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                            <input
-                                                type="text" name="b_69686b41f1936a6456e8c4b69_8934dd72c1" tabindex="-1"
-                                                value="">
-                                        </div>
-                                        <input type="submit" value="Go" name="subscribe"
-                                                id="mc-embedded-subscribe" class="button">
+                            <form
+                                action="https://live.us17.list-manage.com/subscribe/post?u=69686b41f1936a6456e8c4b69&amp;id=8934dd72c1"
+                                method="post" 
+                                id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="card__text"
+                                target="_blank">
+                                    <div class="form-group">    
+                                        <input 
+                                            type="email" 
+                                            required
+                                            value="" 
+                                            name="EMAIL" 
+                                            class="email"
+                                            id="mce-EMAIL" 
+                                            placeholder="E-mail"
+                                        />
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input
+                                            type="text" name="b_69686b41f1936a6456e8c4b69_8934dd72c1" tabindex="-1"
+                                            value="">
                                     </div>
-                                    <p class="card__text dropdown__text">Sign up for our newsletter and be the first one
-                                        to find out when
-                                        Fireflies is available.</p>
-                                </form>
-                            </div>
+                                    <input type="submit" value="Go" name="subscribe"
+                                            id="mc-embedded-subscribe" class="button">
+                                </div>
+                                <p class="dropdown__text">Sign up for our newsletter and be the first one
+                                    to find out when
+                                    Fireflies is available.</p>
+                            </form>
                         </div>
                     </div>
 
-                    <div class="col-full col-md-third socials pl-sm-2">
-                        <h2 class="card__title">Follow Us</h2>
+                    <div class="col-full col-md-half col-lg-third socials">
+                        <h2 class="card__title text-h3">Follow Us</h2>
                         <div class="icon-circles">
-
-                            <a target="_blank" href="https://facebook.com" aria-label="Go to Facebook"
+                            <a target="_blank" href="https://www.facebook.com/FirefliesInc" aria-label="Go to Facebook"
                                 title="Go to Facebook" class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-facebook-f fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-facebook-f"></i>
                             </a>
-                            <a target="_blank" href="https://twitter.com" aria-label="Go to Twitter" title="Go to Twitter"
+                            <a target="_blank" href="https://twitter.com/fireflies_inc" aria-label="Go to Twitter" title="Go to Twitter"
                                 class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-twitter fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-twitter"></i>
                             </a>
-                            <a target="_blank" href="https://instagram.com" aria-label="Go to Instagram"
+                            <a target="_blank" href="https://www.instagram.com/fireflies.live/" aria-label="Go to Instagram"
                                 title="Go to Instagram" class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-instagram fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-instagram"></i>
                             </a>
-                            <a target="_blank" href="https://reddit.com" aria-label="Go to Reddit" title="Go to Reddit"
+                            <a target="_blank" href="https://www.reddit.com/user/firefliesLED" aria-label="Go to Reddit" title="Go to Reddit"
                                 class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-reddit-alien fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-reddit-alien"></i>
                             </a>
-                            <a target="_blank" href="https://linkedin.com" aria-label="Go to Linkedin"
+                            <a target="_blank" href="https://www.linkedin.com/company/firefliesled" aria-label="Go to Linkedin"
                                 title="Go to Linkedin" class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-linkedin-in fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-linkedin-in"></i>
                             </a>
-                            <a target="_blank" href="https://youtube.com" aria-label="Go to Youtube" title="Go to Youtube"
+                            <a target="_blank" href="https://www.youtube.com/channel/UCODtokseV-Nl1xGNood6cKg" aria-label="Go to Youtube" title="Go to Youtube"
                                 class="icon-circle">
-                                <i aria-hidden="true" class="fab fa-youtube fa-2x"></i>
+                                <i aria-hidden="true" class="fab fa-youtube"></i>
                             </a>
                         </div>
                     </div>
                 </section>
 
-                <footer class="footer row row--space">
-                    <div class="col">
-                        <ul class="footer__list">
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="footer__list">
-                            <li>Copyright &#169; 2020 Fireflies Inc.</li> <li>All rights reserved</li>
-                        </ul>
+                <footer class="footer">
+                    <div class="row row--space">
+                        <div class="col-auto">
+                            <ul class="footer__list text-left">
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto">
+                            <ul class="footer__list text-right">
+                                <li>Copyright &#169; 2020 Fireflies Inc.</li> <li>All rights reserved</li>
+                            </ul>
+                        </div>
                     </div>
                 </footer>
             </div>

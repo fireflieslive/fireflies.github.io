@@ -1,9 +1,13 @@
 .card {
     background-color: rgba($darkGrey, 0.8);
-    padding: 2em;
+    padding: rem(20px);
 
-    @include break(md) {
-        padding: 1em 4em;
+    @include break(lg) {
+        padding: rem(30px) rem(40px);
+    }
+
+    @include break(xl) {
+        padding: rem(30px) rem(70px);
     }
 
     .icon-circle {
@@ -11,19 +15,18 @@
     }
 
     &__title {
-        font-size: 1em;
-        line-height: 50px;
         margin: 0;
-        margin-bottom: 0.5rem;
-        
-        @media screen and (max-width:767px) {
-            font-size: 3em;
-        }
-    }
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        font-weight: 700;
+        color: $green;
 
-    &__text {
-        font-size: 0.875rem;
-        margin-right: 20px;
-        line-height: 20px;
+        @include break(md) {
+            height: 50px;
+            justify-content: flex-start;
+            margin-bottom: 1rem;
+        }    
     }
 }
