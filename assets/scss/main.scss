@@ -9,7 +9,6 @@
 @import "layout/content";
 @import "layout/footer";
 @import "layout/header";
-@import "layout/layout";
 
 @import "blocks/audio-toggle";
 @import "blocks/card";
@@ -17,5 +16,6 @@
 @import "blocks/video-bg";
 @import "blocks/icon-circle";
 
+@import "global/typography";
 @import "global/forms";
 @import "global/utilities";

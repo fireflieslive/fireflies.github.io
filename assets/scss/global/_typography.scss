@@ -1,0 +1,14 @@
+@each $name, $fontsize in $typography {
+    .text-#{$name} {
+        font-size: rem($fontsize);
+    }
+}
+@each $name, $fontsize in $typography {
+    @each $bp, $size in $breakpoints {
+        @include break( $bp ) {
+            .text-#{$bp}-#{$name} {
+                font-size: rem($fontsize);
+            }
+        }    
+    }
+}
