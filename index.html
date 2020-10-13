@@ -59,13 +59,13 @@
 
     <div class="stuck stuck--top">
         <div class="container text-right py-2">
-            <button class="audio-toggle">Toggle Audio</button>
+            <button id="audio-toggle" class="audio-toggle">Toggle Audio</button>
         </div>
     </div>
 
     <video class="video-bg" playsinline autoplay muted loop>
-        <!-- <source src="panio.webm" type="video/webm">
-        <source src="panio.mp4" type="video/mp4"> -->
+        <source src="assets/videos/choppinwalts_fullframe.webm" type="video/webm">
+        <source src="assets/videos/choppinwalts_fullframe.mp4" type="video/mp4">
     </video>
 
     <div class="stuck stuck--bottom">
@@ -192,6 +192,25 @@
                 document.querySelector(target).classList.toggle(className);
             });
         });
+
+        const video = document.querySelector('video');
+        button = document.querySelector('button');
+        button.addEventListener('click', function() {
+            button.classList.toggle('muted');
+            if (video.muted === true) {
+                video.muted = false;
+                document.getElementById("audio-toggle").classList.toggle("audio-toggled");
+                document.getElementById("audio-toggle").classList.toggle("audio-toggle");
+            }
+            else if (video.muted === false) {
+                video.muted = true;
+                document.getElementById("audio-toggle").classList.toggle("audio-toggled");
+                document.getElementById("audio-toggle").classList.toggle("audio-toggle");
+            }
+        });
+
+
+
     </script>
 </body>
 

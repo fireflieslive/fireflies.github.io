@@ -15,3 +15,21 @@
         width: 45px;    
     }
 }
+
+.audio-toggled {
+    display: inline-block;
+    background: transparent url("../img/Fireflies_Off.svg") no-repeat center center;
+    border: none;
+    text-indent: -9999em;
+    height: 23px;
+    width: 36px;    
+
+    @include break( md, false ) {
+        margin-top: 3rem;
+    }
+
+    @include break( md ) {
+        height: 30px;
+        width: 45px;    
+    }
+}
